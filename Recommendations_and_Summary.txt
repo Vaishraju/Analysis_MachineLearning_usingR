@@ -1,0 +1,76 @@
+
+Summary of Results
+
+Introduction :
+
+Big data Problem:
+
+The telecom company aims to improve their profits and have least customer churn. They aim at identifying all the factors that can lead the company towards better profits and least customer churn. It is important for the company to improve profits or the company can soon go out of business. The goal of analysis based on data provided by the telecom company was to study and analyze factors contributing the customer churn in the company and come up with a set of recommended plan of actions to tweak some approaches and tackle factors affecting the customer churn, monetary growth of the company and thereby improving profits. As a Data analyst, I was trying to single out factors directly responsible for customer churn and coming up with a desired scheme to improve and work on maximizing profits. If the suggested recoomendations are followed by the company, then they can see a significant increase in profits as the analysed data suggests.
+
+
+Key findings from Data Analytics:
+
+* Customer churn is highest in the first 5 months of their joining to the company. Initial 15 months of the customer's join to the company has the highest count of dropping services.
+
+* Electronic check mode of payment has the highest number of customers cancelling their services. It is account that 61.8% of customer cancelling their services tend to pay their payment through electronic check. The second highest payment mode having canceled service customers is bank draft.
+
+*Another factor affecting cancellation of services by the customers is multiple lines cellular service. Customers with monthly expenses in the range of $70 to $ 100 tend to cancel their services.
+
+* It is observed that 90% of the customers in monthly contract tend to cancel their services. These customers have lesser average call duration and monthly charges.
+
+*Customers with average international call duration less than 100 tend to cancel their services.
+
+
+Classification models and their performance:
+
+Classification models are used to find the factors that affect the outcome variable. It helps us to find the most signifying and the least signifying factors of the cancellation of services by the customers.
+
+I have used all 6 models in order to find the most accurate one to predict the future results and helps the company to avoid customer churn.
+
+The Accuracy of the model to predict the future customers depends on the ROC value. The ROC value is directly proportional to the accuracy in predicting future values.
+
+The ROC values of all 6 classifies are as below.
+
+	
+Model Accuracy
+
+Decision Tree	- 85.7%
+LDA	- 90.2%
+KNN	- 86.37%
+Random Forest -	89.67%
+QDA	- 88.4%
+Logistic Regression	- 89.99%
+
+It is evident that LDA is the more accurate and followed by Logistic regression and Random Forest.<br>
+
+Using Logistic and Random forest models we can state that 
+
+Most significant factors affecting the cancelling service are:
+
+1. Average international call duration (average_intl_mins)
+2. Average call duration(average_call_mins )
+3. customer's months with company(months_with_company)
+
+
+Least significant factors affecting the cancelling of service are:
+
+1. Technical support (tech_support)
+2. Contract
+3. payment mode
+   
+Recommendations
+
+Based on thorough analysis of various aspects affecting the company’s profits, the following recommendations are suggested for maximizing the telecom company profits by lowering customer churn: 
+1. More highly competiting and welcoming offers needs to be provided for the customer's first 15 months of joining company.
+
+2. Customers with less international calls needs get more offers.
+
+3. Customers with monthly charges in the range of $70 to $90  tend to leave the company.
+
+4. Electric Check mode of payment needs to be checked if its facing any problems it needs to be rectified.
+
+5. Company should make special plans and offers for retaining customers with month contract and making them get involved in year contacts.
+
+Executive Summary
+
+The telecom company has tasked me to improve profits by lowering the customer churn  rate, after thorough analysis and graphical representation of the analysis, telecom company obtains more profit from customers having more average internal call duration and from customers having higher average call duration to be high. Customers paying bills through electronic check is prone to cancel their services. Best classification model for predicting future customer's churn is LDA with roc of 90.2%, next best classifier is Logistic regression and random forest with accuracy of 90% .Company needs to acquire more and more customers to take up one year or two year contracts with the company. Customer's churn depends on factors such as months_with_company, avg_intl_calls and avg_call_mins. Least affecting factors for customer attrition are technical_support, contract_two_year etc.
